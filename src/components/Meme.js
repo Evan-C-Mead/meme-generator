@@ -3,8 +3,14 @@ import memesData from "../data/memesData";
 
 export default function Meme() {
     function getMemeImage(){
-        console.log("clicked")
+        const memesArray = memesData.data.memes
+        const randomNumber = Math.floor(Math.random() * memesArray.length)
+        const url = memesArray[randomNumber].url
+        console.log(url)
+        return url.map(url => <p>{url}</p>);
     }
+
+
 
     return (
         <main>
