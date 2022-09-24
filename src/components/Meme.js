@@ -7,10 +7,7 @@ export default function Meme() {
         const randomNumber = Math.floor(Math.random() * memesArray.length)
         const url = memesArray[randomNumber].url
         console.log(url)
-        return url.map(url => <p>{url}</p>);
     }
-
-
 
     return (
         <main>
