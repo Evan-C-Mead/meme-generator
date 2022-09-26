@@ -4,30 +4,46 @@ import Header from "./components/Header";
 import Meme from "./components/Meme";
 
 export default function App() {
-    function greeting(name) {
-        const date = new Date()
-        const hours = date.getHours()
+    // function greeting(name) {
+    //     const date = new Date()
+    //     const hours = date.getHours()
+    //
+    //     let timeOfDay
+    //     if(hours >= 4 && hours < 12) {
+    //         timeOfDay = "morning"
+    //     } else if(hours >= 12 && hours < 17) {
+    //         timeOfDay = "afternoon"
+    //     } else if(hours >= 17 && hours < 20) {
+    //         timeOfDay = "evening"
+    //     } else {
+    //         timeOfDay = "night"
+    //     }
+    //     return `Good ${timeOfDay}, ${name}!`
+    // }
+    //
+    // console.log(greeting("Dude"))
 
-        let timeOfDay
-        if(hours >= 4 && hours < 12) {
-            timeOfDay = "morning"
-        } else if(hours >= 12 && hours < 17) {
-            timeOfDay = "afternoon"
-        } else if(hours >= 17 && hours < 20) {
-            timeOfDay = "evening"
-        } else {
-            timeOfDay = "night"
-        }
-        return `Good ${timeOfDay}, ${name}!`
+    const [count, setCount] = React.useState(0)
+
+    function add() {
+        setCount(count + 1)
     }
 
-    console.log(greeting("Dude"))
+    function subtract() {
+        setCount(count - 1)
+    }
 
-
-  return (
-      <div>
-        <Header/>
-        <Meme/>
-      </div>
-  )
+    return (
+        <div>
+            <Header/>
+            <Meme/>
+            <div className="counter">
+                <button onClick={subtract}>–</button>
+                <div>
+                    <h1>{count}</h1>
+                </div>
+                <button onClick={add}>+</button>
+            </div>
+        </div>
+    )
 }
