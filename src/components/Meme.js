@@ -9,9 +9,6 @@ export default function Meme() {
         const randomNumber = Math.floor(Math.random() * memesArray.length)
         setMemeImage(memesArray[randomNumber].url)
 
-        const url = memesArray[randomNumber].url
-        console.log(url)
-        console.log(setMemeImage(memeImage))
     }
 
     return (
@@ -22,7 +19,7 @@ export default function Meme() {
                 <button className="form--button" onClick={getMemeImage}>get a new meme image 🖼</button>
             </div>
             <div className="memeImage">
-                <img src={memeImage} alt="memeimage" />
+                <img src={memeImage} alt="memeimage" className="meme--image"/>
             </div>
         </main>
     )
