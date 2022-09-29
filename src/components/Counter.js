@@ -13,11 +13,11 @@ export default function Counter() {
 
     return (
         <div className="counter">
-            <button onClick={subtract}>–</button>
-            <div>
+            <button className="counter--minus" onClick={subtract}>–</button>
+            <div className="counter--count">
                 <h1>{count}</h1>
             </div>
-            <button onClick={add}>+</button>
+            <button className="counter--plus" onClick={add}>+</button>
         </div>
     )
 }
