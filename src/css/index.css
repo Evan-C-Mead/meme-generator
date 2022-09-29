@@ -8,6 +8,10 @@ body {
   background: slategrey;
 }
 
+#root {
+  padding-bottom: 20px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -68,4 +72,28 @@ main {
 
 .meme--image {
   max-width: 100%;
+}
+
+.state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.state--title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.state--value {
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #262626;
+  cursor: pointer;
+  margin: auto;
 }

@@ -8,7 +8,6 @@ export default function Meme() {
         const memesArray = memesData.data.memes
         const randomNumber = Math.floor(Math.random() * memesArray.length)
         setMemeImage(memesArray[randomNumber].url)
-
     }
 
     return (
@@ -19,7 +18,7 @@ export default function Meme() {
                 <button className="form--button" onClick={getMemeImage}>get a new meme image 🖼</button>
             </div>
             <div className="memeImage">
-                <img src={memeImage} alt="memeimage" className="meme--image"/>
+                <img src={memeImage} alt="meme" className="meme--image"/>
             </div>
         </main>
     )
