@@ -18,7 +18,6 @@ export default function Meme() {
             ...prevMeme,
             randomImage: url
         }))
-
     }
 
     return (
