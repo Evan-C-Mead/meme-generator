@@ -150,3 +150,41 @@ main {
   margin-right: -20px;
   z-index: 1;
 }
+
+.card {
+  width: 200px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  height: 350px;
+  box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+  -webkit-box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+  -moz-box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+  background-color: indianred;
+}
+
+.card--image {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  border-radius: 120px;
+}
+
+.card--name {
+  margin-block: 13px;
+  color: #333333;
+}
+
+.card--info {
+  padding: 10px;
+}
+
+.card--favorite {
+  width: 25px;
+  cursor: pointer;
+}
+
+.card--contact {
+  font-size: 0.75rem;
+  color: #333333;
+  margin-block: 7px;
+}
