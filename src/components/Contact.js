@@ -28,7 +28,6 @@ export default function Contact() {
                     <p className="card--contact">{contact.phone}</p>
                     <p className="card--contact">{contact.email}</p>
                 </div>
-
             </article>
         </main>
     )
