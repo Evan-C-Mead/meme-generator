@@ -200,3 +200,16 @@ main {
   display: inline-block;
   margin-right: 10px;
 }
+
+.box-header {
+  color: white;
+  text-align: center;
+  align-self: auto;
+  margin: auto;
+}
+
+.box-text {
+  color: white;
+  font-size: small;
+  text-align: center;
+}
