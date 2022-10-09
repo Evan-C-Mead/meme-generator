@@ -164,14 +164,12 @@ main {
 }
 
 .card--image {
-  /*margin: auto;*/
   width: 100%;
   padding: 10px;
   border-radius: 120px;
 }
 
 .card--name {
-  /*margin-block: 9px;*/
   color: #333333;
   margin: auto;
 }
@@ -202,14 +200,13 @@ main {
 }
 
 .box-header {
-  color: white;
   text-align: center;
   align-self: auto;
   margin: auto;
+  padding-top: 25px;
 }
 
 .box-text {
-  color: white;
-  font-size: small;
+  font-size: x-small;
   text-align: center;
 }
