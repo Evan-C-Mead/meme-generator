@@ -19,7 +19,7 @@ export default function Box(props) {
     }
 
     return (
-        <div style={styles} className="box" onClick={() => props.toggle(props.id)}>
+        <div style={styles} className="box" onClick={props.toggle}>
             <h5 className="box-header" style={textStyle}>Box {props.id}</h5>
             <p className="box-text" style={textStyle}>{onOff}</p>
         </div>
