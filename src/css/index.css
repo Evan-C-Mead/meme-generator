@@ -191,6 +191,12 @@ main {
   margin-block: 7px;
 }
 
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .box {
   height: 100px;
   width: 100px;

@@ -19,7 +19,7 @@ export default function Boxes() {
     ))
 
     return (
-        <main>
+        <main className="boxes">
             {squareElements}
         </main>
     )
