@@ -12,7 +12,7 @@ export default function App() {
             <Header/>
             {/*<Meme/>*/}
             {/*<Contact/>*/}
-            <Boxes/>
+            {/*<Boxes/>*/}
             <Messages/>
         </div>
     )
