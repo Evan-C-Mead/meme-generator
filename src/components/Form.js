@@ -7,7 +7,8 @@ export default function Form() {
         email: "",
         info: "",
         isFriendly: false,
-        awesomeness: ""
+        awesomeness: "",
+        favColor: ""
     })
 
     function handleChange(event) {
@@ -44,6 +45,20 @@ export default function Form() {
                 <label htmlFor="most-awesome">Most Awesome!</label>
                 <br/>
             </fieldset>
+            <br/>
+
+            <label htmlFor="favColor">What is your favorite color?</label>
+            <br/>
+            <select id="favColor" onChange={handleChange} name="favColor" value={formNameData.favColor}>
+                <option value="" disabled={true}>-- Choose --</option>
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="indigo">Indigo</option>
+                <option value="violet">Violet</option>
+            </select>
         </form>
     )
 }
