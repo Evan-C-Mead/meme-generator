@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Form() {
-    const [formNameData, setFormNameData] = React.useState({firstName: "", lastName: ""})
+    const [formNameData, setFormNameData] = React.useState({firstName: "", lastName: "", email: ""})
 
     function handleChange(event) {
         setFormNameData(prevFormData => {
@@ -16,8 +16,9 @@ export default function Form() {
 
     return (
         <form className="form-name">
-            <input type="text" placeholder="First Name" onChange={handleChange} name="firstName"/>
-            <input type="text" placeholder="Last Name" onChange={handleChange} name="lastName"/>
+            <input type="text" placeholder="first" onChange={handleChange} name="firstName" value={formNameData.firstName}/>
+            <input type="text" placeholder="last" onChange={handleChange} name="lastName" value={formNameData.lastName}/>
+            <input type="text" placeholder="email" onChange={handleChange} name="email" value={formNameData.email}/>
         </form>
     )
 }
