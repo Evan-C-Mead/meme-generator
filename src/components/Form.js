@@ -6,7 +6,8 @@ export default function Form() {
         lastName: "",
         email: "",
         info: "",
-        isFriendly: true
+        isFriendly: false,
+        awesomeness: ""
     })
 
     function handleChange(event) {
@@ -29,6 +30,20 @@ export default function Form() {
             <textarea id="form-info" placeholder="notes" onChange={handleChange} name="info" value={formNameData.info}/>
             <input type="checkbox" id="isFriend" onChange={handleChange} name="isFriendly" checked={formNameData.isFriendly}/>
             <label htmlFor="isFriend">Are you a friend?</label>
+            <br/>
+            <br/>
+            <fieldset>
+                <legend>Current Awesome Level</legend>
+                <input type="radio" id="awesome" onChange={handleChange} checked={formNameData.awesomeness === "awesome"} name="awesomeness" value="awesome"/>
+                <label htmlFor="awesome">Awesome!</label>
+                <br/>
+                <input type="radio" id="more-awesome" onChange={handleChange} checked={formNameData.awesomeness === "more-awesome"} name="awesomeness" value="more-awesome"/>
+                <label htmlFor="more-awesome">More Awesome!</label>
+                <br/>
+                <input type="radio" id="most-awesome" onChange={handleChange} checked={formNameData.awesomeness === "most-awesome"} name="awesomeness" value="most-awesome"/>
+                <label htmlFor="most-awesome">Most Awesome!</label>
+                <br/>
+            </fieldset>
         </form>
     )
 }

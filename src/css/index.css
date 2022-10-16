@@ -236,3 +236,7 @@ textarea {
   border-radius: 5px;
   display: block;
 }
+
+fieldset {
+  width: 30%;
+}
