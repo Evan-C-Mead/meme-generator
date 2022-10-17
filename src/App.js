@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Boxes from "./components/Boxes";
 import Messages from "./components/Messages";
 import Form from "./components/Form";
+import SignUp from "./components/Sign-Up";
 
 export default function App() {
     return (
@@ -15,7 +16,8 @@ export default function App() {
             {/*<Contact/>*/}
             {/*<Boxes/>*/}
             {/*<Messages/>*/}
-            <Form/>
+            {/*<Form/>*/}
+            <SignUp/>
         </div>
     )
 }

@@ -21,10 +21,15 @@ export default function Form() {
         })
     }
 
-    console.log(formNameData)
+    function handleSubmit(event) {
+        event.preventDefault()
+        console.log(formNameData)
+    }
+
+    // console.log(formNameData)
 
     return (
-        <form className="form-name-info">
+        <form className="form-name-info" onSubmit={handleSubmit}>
             <input type="text" placeholder="first" onChange={handleChange} name="firstName" value={formNameData.firstName}/>
             <input type="text" placeholder="last" onChange={handleChange} name="lastName" value={formNameData.lastName}/>
             <input type="text" placeholder="email" onChange={handleChange} name="email" value={formNameData.email}/>
@@ -46,7 +51,6 @@ export default function Form() {
                 <br/>
             </fieldset>
             <br/>
-
             <label htmlFor="favColor">What is your favorite color?</label>
             <br/>
             <select id="favColor" onChange={handleChange} name="favColor" value={formNameData.favColor}>
@@ -59,6 +63,8 @@ export default function Form() {
                 <option value="indigo">Indigo</option>
                 <option value="violet">Violet</option>
             </select>
+            <br/>
+            <button type="submit">Send stats</button>
         </form>
     )
 }

@@ -26,7 +26,7 @@ main {
   align-items: center;
   height: 65px;
   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
-  color: white;
+  color: papayawhip;
   padding: 20px;
 }
 
@@ -65,7 +65,7 @@ main {
   grid-column: 1 / -1;
   font-family: "Karla", sans-serif;
   border-radius: 5px;
-  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
   color: papayawhip;
   border: none;
   cursor: pointer;
@@ -239,4 +239,62 @@ textarea {
 
 fieldset {
   width: 30%;
+}
+
+.form-container {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up--form {
+  background-color: papayawhip;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+}
+
+.form--email {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.form--input {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 5px;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+
+.form--input::placeholder {
+  color: papayawhip;
+}
+
+.email--check {
+  accent-color: white;
+}
+
+.form--submit {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  color: papayawhip;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  border: none;
+  cursor: pointer;
+}
+
+.form--email > input {
+  margin-right: 10px;
 }
