@@ -7,6 +7,7 @@ import Boxes from "./components/Boxes";
 import Messages from "./components/Messages";
 import Form from "./components/Form";
 import SignUp from "./components/Sign-Up";
+import StarWars from "./components/Star-Wars";
 
 export default function App() {
     return (
@@ -17,7 +18,8 @@ export default function App() {
             {/*<Boxes/>*/}
             {/*<Messages/>*/}
             {/*<Form/>*/}
-            <SignUp/>
+            {/*<SignUp/>*/}
+            <StarWars/>
         </div>
     )
 }
