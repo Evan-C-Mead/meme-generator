@@ -8,18 +8,20 @@ import Messages from "./components/Messages";
 import Form from "./components/Form";
 import SignUp from "./components/Sign-Up";
 import StarWars from "./components/Star-Wars";
+import Toggle from "./components/Toggle";
 
 export default function App() {
     return (
         <div>
             <Header/>
-            {/*<Meme/>*/}
+            <Meme/>
             {/*<Contact/>*/}
             {/*<Boxes/>*/}
             {/*<Messages/>*/}
             {/*<Form/>*/}
             {/*<SignUp/>*/}
-            <StarWars/>
+            {/*<StarWars/>*/}
+            {/*<Toggle/>*/}
         </div>
     )
 }

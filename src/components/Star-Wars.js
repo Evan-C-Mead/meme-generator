@@ -1,5 +1,4 @@
 import React from "react";
-import {logDOM} from "@testing-library/react";
 
 export default function StarWars() {
     const [starWarsData, setStarWarsData] = React.useState({})
